@@ -1,0 +1,205 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@100;200;300;400;500;600;700;800;900&display=swap");
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+::selection {
+  background: #83cbff;
+  color: #000a12;
+}
+
+body {
+  scroll-behavior: smooth;
+  background: #fafdff;
+  background: url(../img/bg9.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body.bis {
+  background: url(../img/bg10.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "degular";
+  font-weight: 700;
+  font-style: normal;
+  src: url(../fonts/Degular-Bold.woff) format("woff");
+}
+* {
+  color: #fafdff;
+  font-family: "degular";
+}
+
+.header {
+  position: fixed;
+}
+.header .logo-container {
+  width: 300px;
+}
+.header .logo-container img {
+  z-index: -1000;
+  position: absolute;
+}
+.header .logo-container .logo {
+  font-size: 32px;
+  font-weight: 600;
+  padding: 25px 0 0 70px;
+  color: #83cbff;
+}
+.header .logo-container .logo .home-link {
+  text-decoration: none;
+  color: #83cbff;
+}
+.header #navbar {
+  z-index: -10000;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 96px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 50px;
+  transition: 0.1s;
+}
+.header #navbar .menu {
+  display: flex;
+  flex-direction: row;
+}
+.header #navbar .menu .item .link {
+  text-decoration: none;
+  font-size: 23px;
+  margin-left: 40px;
+  transition: 0.2s;
+}
+.header #navbar .menu .item .link i {
+  transition: 0.2s;
+}
+.header #navbar .menu .item .link:hover {
+  color: #83cbff;
+}
+.header #navbar .menu .item .link:hover i {
+  color: #83cbff;
+}
+.header #navbar.scroll-active {
+  background: #000a12;
+}
+
+.hero-banner {
+  z-index: -10000;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+.hero-banner .txt-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  padding: 110px 50px 0 230px;
+}
+.hero-banner .txt-container .title {
+  font-size: 50px;
+  color: #83cbff;
+}
+.hero-banner .txt-container .subtitle {
+  font-family: "Noto Serif Display", serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+.hero-banner .txt-container .infos-container {
+  margin-top: 30px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.hero-banner .txt-container .infos-container .infos {
+  font-weight: 700;
+  font-size: 35px;
+  font-family: "Noto Serif Display", serif;
+}
+.hero-banner .txt-container .infos-container .infos .plus {
+  font-size: 30px;
+  transition: 0.2s;
+}
+.hero-banner .txt-container .infos-container .infos .plus:hover {
+  color: #83cbff;
+}
+.hero-banner .txt-container .infos-container .proposed-container {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.hero-banner .txt-container .infos-container .proposed-container .txt {
+  font-size: 35px;
+  color: #83cbff;
+  margin-bottom: 50px;
+}
+.hero-banner .txt-container .infos-container .proposed-container .link {
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 50px;
+  background: #fafdff;
+  color: #000a12;
+  font-family: "Noto Serif Display", serif;
+  font-size: 25px;
+  font-weight: 700;
+  transition: 0.2s;
+}
+.hero-banner .txt-container .infos-container .proposed-container .link:hover {
+  box-shadow: 0 5px 40px 10px #83cbff6e;
+  background: #83cbff;
+}
+
+/*# sourceMappingURL=style.css.map */
