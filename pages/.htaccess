@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "Accès protégé"
-AuthUserFile .htpasswd
+AuthUserFile /pages/.htpasswd
 require valid-user
